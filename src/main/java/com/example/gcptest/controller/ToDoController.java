@@ -21,8 +21,8 @@ public class ToDoController {
 	ToDoDao toDoDao;
 	
 	@GetMapping("/test")
-	public String testGet(@RequestBody ToDo todo) throws Exception {
-		return "123";
+	public String testGet() throws Exception {
+		return "這是server來的";
 	}
 
 	@PostMapping("/create")
